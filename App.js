@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Cat from "./components/Cat";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Welome to อุ้ อุ้ อ๊า อ๊า อุก่ะ อุก่ะ</Text>
       <StatusBar style="auto" />
+      <Cat/>
     </View>
   );
 }
