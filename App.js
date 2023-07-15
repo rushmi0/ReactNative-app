@@ -1,13 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Cat from "./components/Cat";
+import { StyleSheet, Text, View , Image} from 'react-native';
+import ViewBoxesWithColorAndText from './components/ViewBoxesWithColorAndText';
+import DisplayandImage from './components/DisplayandImage';
+import LotOfGreeting from './components/LotOfGreeting';
+import CustomText from './components/CustomText';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Welome to อุ้ อุ้ อ๊า อ๊า อุก่ะ อุก่ะ</Text>
-      <StatusBar style="auto" />
-      <Cat/>
+      {/* <ViewBoxesWithColorAndText/> */}
+      {/* <DisplayandImage/> */}
+      {/* <LotOfGreeting/> */}
+      <CustomText/>
     </View>
   );
 }
