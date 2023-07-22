@@ -23,9 +23,9 @@ export default function App() {
       {/* -- การสร้าง | state component -- */}
       {/* <Counter/> */}
       {/* <MyInput/> */}
-      <IncrementCounter/>
+      {/* <IncrementCounter/> */}
 
-      {/* <Form/> */}
+      <Form/>
 
     </View>
   );
