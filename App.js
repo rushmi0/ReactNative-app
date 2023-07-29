@@ -27,7 +27,10 @@ export default function App() {
       {/* <IncrementCounter/> */}
       {/* <Form/> */}
 
-      <Login/>
+      {/* <Login/> */}
+
+
+      <ViewBoxesWithColorAndText/>
 
     </View>
   );
