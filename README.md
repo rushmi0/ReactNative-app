@@ -3,10 +3,12 @@
 <br>
 ชื่อ: วัชรพล พงษ์วิลัย
 <br>
-วันที่: 22/07/2023
+วันที่: 29/07/2023
 <br>
 ```txt
- 1. React Hook >> useState
- 2. React Native Component, Part II (Cont.)  >> Input, Stylesheet Components, Flexbox
- 3. Practice
+1. Recap : Practice with Components
+2. React Native Component, Part III (Cont.) >> Stylesheet , Flexbox
+3. User Interface Component >> Button
+4. React Hook part  useEffect
+5. Practice
 ```
