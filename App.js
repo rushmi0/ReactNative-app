@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import TouchableExample from './components/TouchableExample'
+import TouchablePractice from './components/TouchablePractice'
 
 const App = () => {
   return (
     <View>
-      <TouchableExample/>
+      <TouchablePractice/>
     </View>
   )
 }
