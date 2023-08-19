@@ -3,10 +3,19 @@
 <br>
 ชื่อ: วัชรพล พงษ์วิลัย
 <br>
-วันที่: 05/08/2023
+วันที่: 19/08/2023
 <br>
 ```txt
-1. Recap : Practice with Touchable Components
-2. React Hook part useEffect
-3. Example and Practice React Hook part useEffect
+Lecture #7 [August 19, 2023]: Class Agenda
+1. Online test(from Aj.Lalita) for about 20 minutes by clicking the following link:
+
+    - http://222.229.69.95/ 
+
+    - Register and Login
+
+2. React Hook : useEffect
+
+3. FlatList Component
+
+4. In-class exercise
 ```
