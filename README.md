@@ -6,16 +6,14 @@
 วันที่: 19/08/2023
 <br>
 ```txt
-Lecture #7 [August 19, 2023]: Class Agenda
-1. Online test(from Aj.Lalita) for about 20 minutes by clicking the following link:
+1. PR Mobile Application Contest as a link: 
+https://www.facebook.com/100094507495416/posts/pfbid0354LSgwXyzZqV5pR6DiifYJLJaL5vcLcyB2HD57cs7kfCAcH8DVXzRb8ezLtvFPRXl/?mibextid=cr9u03
 
-    - http://222.229.69.95/ 
+2. using Android Emulator
 
-    - Register and Login
+3. using Fetch call API in Component
 
-2. React Hook : useEffect
+4. Guideline: Postman calls the API
 
-3. FlatList Component
-
-4. In-class exercise
+5. In-class exercise
 ```
