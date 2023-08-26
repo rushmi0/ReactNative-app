@@ -1,5 +1,4 @@
 import {
-    StyleSheet,
     Text,
     View,
     ActivityIndicator,
@@ -14,10 +13,12 @@ const News = () => {
     const[articles, setArticles] = useState();
     const[loading, setLoading] = useState(true);
 
+
     useEffect(() => {
         getData();
 
     },[])
+
 
     const getData = async () => {
         try{
@@ -33,6 +34,7 @@ const News = () => {
 
         }
     }
+
 
     const _renderItem = ({item}) => {
 
@@ -61,6 +63,7 @@ const News = () => {
         );
 
     };
+
 
     const _onRefresh = () => {
         setloading(true);
