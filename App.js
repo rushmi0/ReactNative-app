@@ -9,6 +9,7 @@ import FlatList_Example1 from './components/FlatList_Example1'
 import FlatListHeaderFooter from "./components/FlatList_HeaderFooter";
 import FlastListApi from "./components/FlastListAPI";
 import News from "./components/News";
+import ProductScreen from "./components/ProductScreen";
 
 const App = () => {
   return (
@@ -22,7 +23,9 @@ const App = () => {
 
       {/*<FlatListHeaderFooter/>*/}
       {/*<FlastListApi/>*/}
-       <News/>
+      {/* <News/>*/}
+
+        <ProductScreen/>
     </View>
   )
 }
