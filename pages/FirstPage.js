@@ -1,4 +1,4 @@
-import {Button, Text, View} from 'react-native'
+import {Button, Text, View, StyleSheet} from 'react-native'
 import React from 'react'
 
 const FirstPage = ({navigation}) => {
@@ -17,3 +17,18 @@ const FirstPage = ({navigation}) => {
 }
 
 export default FirstPage
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 16,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#D3FF9B'
+    },
+    textStyle: {
+        fontSize: 25,
+        textAlign: 'center',
+        marginBottom: 16
+    },
+})

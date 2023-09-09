@@ -16,7 +16,7 @@ function FirstScreen() {
         <Stack.Navigator
             screenOptions={{
                 headerStyle: {
-                    backgroundColor: '#fff8c9',
+                    backgroundColor: '#7DEFB7',
                 },
                 headerTintColor: '#ffffff',
                 headerTitleStyle: {
@@ -33,7 +33,7 @@ function SecondScreen() {
         <Stack.Navigator
             screenOptions={{
                 headerStyle: {
-                    backgroundColor: '#fff8c9',
+                    backgroundColor: '#7DEFB7',
                 },
                 headerTintColor: '#ffffff',
                 headerTitleStyle: {
