@@ -3,11 +3,9 @@ import React from 'react'
 import { useState } from 'react'
 
 
-
-
 const ViewBoxesWithColorAndText = () => {
 
-  
+
 const checkTextinput = () => {
   // Check for the Name TextInput
   if (!textInpuPass.trim()) {
@@ -27,7 +25,7 @@ const checkTextinput = () => {
     '\nPassword: ' + textInpuPass
   );
 }
-  
+
   const [textInputEmail, setTextInputEmail] = useState('');
   const [textInpuPass, setTextInputPass] = useState('');
 
@@ -35,7 +33,7 @@ const checkTextinput = () => {
     <View style={styles.container}>
       {/* <Text>ViewBoxesWithColorAndText</Text> */}
 
-      <TextInput 
+      <TextInput
           placeholder='Email'
           style={styles.input}
           value={textInputEmail}
@@ -44,7 +42,7 @@ const checkTextinput = () => {
       <Text>{'\n'}</Text>
 
 
-      <TextInput 
+      <TextInput
           placeholder='Password'
           style={styles.input}
           value={textInpuPass}

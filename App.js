@@ -1,60 +1,79 @@
-import React, {Component} from 'react'
-import {StyleSheet} from 'react-native'
+import 'react-native-gesture-handler';
+import React from 'react';
+import { View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import {NavigationContainer} from '@react-navigation/native'
-import {createNativeStackNavigator} from '@react-navigation/native-stack'
-
-import HomeScreen from './screens/HomeScreen'
-import DetailsScreen from './screens/DetailsScreen'
-
-
-import IndexScreen from './screens/IndexScreen'
-import CreatePostScreen from './screens/CreatePostScreen'
-
+import FirstPage from './pages/FirstPage';
+import SecondPage from './pages/SecondPage';
 
 const Stack = createNativeStackNavigator();
+const Drawer = createDrawerNavigator();
 
-export class App extends Component {
-    render() {
-        return (
-            <NavigationContainer>
-                <Stack.Navigator
-                    mode = 'model'
-                    screenOptions={{
-                        headerStyle:{
-                            backgroundColor:'#008b8b'
-                        },
-                        headerTintColor:'#ffff',
-                        headerTitleStyle:{
-                            fontWeight:'bold',
-                        }
-                    }}
-                >
-                    {/*<Stack.Screen*/}
-                    {/*    name='Home'*/}
-                    {/*    component={HomeScreen}*/}
-                    {/*    options={{title:'Overview'}}*/}
-                    {/*    // initialParams={{itemID: 42}}*/}
-                    {/*/>*/}
-                    {/*<Stack.Screen*/}
-                    {/*    name='Details'*/}
-                    {/*    component={DetailsScreen}*/}
-                    {/*/>*/}
-
-                    <Stack.Screen
-                        name='Index'
-                        component={IndexScreen}
-                        options={{title: 'MainPage'}}
-                    />
-                    <Stack.Screen
-                        name='CreatePost'
-                        component={CreatePostScreen}
-                    />
-                </Stack.Navigator>
-            </NavigationContainer>
-        )
-    }
+function FirstScreen() {
+    return (
+        <Stack.Navigator
+            screenOptions={{
+                headerStyle: {
+                    backgroundColor: '#fff8c9',
+                },
+                headerTintColor: '#ffffff',
+                headerTitleStyle: {
+                    fontWeight: 'bold',
+                },
+            }}>
+            <Stack.Screen name="First Page" component={FirstPage} />
+        </Stack.Navigator>
+    );
 }
 
-export default App
+function SecondScreen() {
+    return (
+        <Stack.Navigator
+            screenOptions={{
+                headerStyle: {
+                    backgroundColor: '#fff8c9',
+                },
+                headerTintColor: '#ffffff',
+                headerTitleStyle: {
+                    fontWeight: 'bold',
+                },
+            }}>
+            <Stack.Screen name="Second Page" component={SecondPage} />
+        </Stack.Navigator>
+    );
+}
 
+function MyDrawer() {
+    return (
+        <Drawer.Navigator
+            screenOptions={{
+                drawerStyle: {
+                    backgroundColor: '#ccd1fc',
+                    width: 240,
+                },
+            }}>
+            <Drawer.Screen
+                name="FirstDrawer"
+                component={FirstScreen}
+                options={{ drawerLabel: 'First Page Option' }}
+            />
+            <Drawer.Screen
+                name="SecondDrawer"
+                component={SecondScreen}
+                options={{ drawerLabel: 'Second Page Option' }}
+            />
+        </Drawer.Navigator>
+    );
+}
+
+const App = () => {
+    return (
+        <NavigationContainer>
+            <MyDrawer />
+        </NavigationContainer>
+    );
+};
+
+export default App;
