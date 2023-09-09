@@ -7,6 +7,11 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack'
 import HomeScreen from './screens/HomeScreen'
 import DetailsScreen from './screens/DetailsScreen'
 
+
+import IndexScreen from './screens/IndexScreen'
+import CreatePostScreen from './screens/CreatePostScreen'
+
+
 const Stack = createNativeStackNavigator();
 
 export class App extends Component {
@@ -14,7 +19,7 @@ export class App extends Component {
         return (
             <NavigationContainer>
                 <Stack.Navigator
-                    initialRouteName='Home'
+                    mode = 'model'
                     screenOptions={{
                         headerStyle:{
                             backgroundColor:'#008b8b'
@@ -25,15 +30,25 @@ export class App extends Component {
                         }
                     }}
                 >
+                    {/*<Stack.Screen*/}
+                    {/*    name='Home'*/}
+                    {/*    component={HomeScreen}*/}
+                    {/*    options={{title:'Overview'}}*/}
+                    {/*    // initialParams={{itemID: 42}}*/}
+                    {/*/>*/}
+                    {/*<Stack.Screen*/}
+                    {/*    name='Details'*/}
+                    {/*    component={DetailsScreen}*/}
+                    {/*/>*/}
+
                     <Stack.Screen
-                        name='Home'
-                        component={HomeScreen}
-                        options={{title:'Overview'}}
-                        initialParams={{itemID: 42}}
+                        name='Index'
+                        component={IndexScreen}
+                        options={{title: 'MainPage'}}
                     />
                     <Stack.Screen
-                        name='Details'
-                        component={DetailsScreen}
+                        name='CreatePost'
+                        component={CreatePostScreen}
                     />
                 </Stack.Navigator>
             </NavigationContainer>
@@ -43,16 +58,3 @@ export class App extends Component {
 
 export default App
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        padding: 16,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    textStyle: {
-        fontSize: 25,
-        textAlign: 'center',
-        marginBottom: 16
-    },
-})
