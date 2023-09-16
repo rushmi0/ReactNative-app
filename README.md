@@ -3,12 +3,12 @@
 <br>
 ชื่อ: วัชรพล พงษ์วิลัย
 <br>
-วันที่: 09/09/2023
+วันที่: 16/09/2023
 <br>
 ```txt
-    Lecture #10 [September 9, 2023]: Class Agenda
-    
-    - React Navigator : Stack Navigator with passing parameters to routes
-    - React Navigator : Drawer Navigator
+    Lecture #11 [September 16, 2023]: Class Agenda
+
+    - React Navigator : Drawer Navigator (Continue)
+    - React Navigator : Bottom Tabs Navigator
     - In-class exercise
 ```
